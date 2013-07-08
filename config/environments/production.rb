@@ -67,4 +67,17 @@ Omrails::Application.configure do
 
   # Need to change port when in production
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # config/environments/production.rb
+
+  #Paperclip should use Amazon S3 on heroku
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AKIAI5XPXNZ2IEHPBDKQ'],
+      :secret_access_key => ENV['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']
+    }
+  }
+
 end

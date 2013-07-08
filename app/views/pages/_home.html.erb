@@ -1,13 +1,13 @@
 <% if user_signed_in? %>
  # show them something 
- 		<h1>Welcome to One Month Rails</h1>
+ 		<h1>Welcome to Image Uploader</h1>
  <% else %>
 	 <div class="hero-unit">
-		<h1>Welcome to One Month Rails</h1>
+		<h1>Welcome to Image Uploader</h1>
 		<p>
-			You've found the home page for the 
-			<%= link_to "One Month Rails", "http://nolanm.com"%>
-			application
+			Upload photos and stuff 
+			<%= link_to "Link", "http://nolanm.com"%>
+			to me
 		</p>
 		<p>
 			<%= link_to "Sign Up Now", new_user_registration_path, class: "bntn btn-primary btn large"%>
