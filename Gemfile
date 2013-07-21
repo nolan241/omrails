@@ -15,6 +15,7 @@ end
 
 group :development, :test do
 	gem 'sqlite3'
+	gem "better_errors"
 end
 
 group :assets do

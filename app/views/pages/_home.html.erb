@@ -1,5 +1,7 @@
 <% if user_signed_in? %>
- # show them something 
+  <%= link_to "Create New Pin", new_pin_path, class: "btn btn-inverse"%>
+
+
  		<h1>Welcome to Image Uploader</h1>
  <% else %>
 	 <div class="hero-unit">
